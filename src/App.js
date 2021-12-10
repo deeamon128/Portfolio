@@ -1,13 +1,31 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
+import About from './pages/About';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <NavMenu />
-      </BrowserRouter>
+        <Switch>
+          <Route path="/aboutme">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/contactme">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }
