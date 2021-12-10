@@ -1,8 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+const NavMenuStyles = styled.div`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem 0;
+  background-color: var(--dark-bg);
+  ul {
+  }
+`;
 
 const NavMenu = () => (
-  <div>
+  <NavMenuStyles>
     <ul>
       <li>
         <NavLink to="/">Home</NavLink>
@@ -17,7 +30,7 @@ const NavMenu = () => (
         <NavLink to="/contactme">Contact Me</NavLink>
       </li>
     </ul>
-  </div>
+  </NavMenuStyles>
 );
 
 export default NavMenu;
