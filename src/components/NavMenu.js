@@ -11,6 +11,29 @@ const NavMenuStyles = styled.div`
   padding: 1rem 0;
   background-color: var(--dark-bg);
   ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    li {
+      display: inline-block;
+      border-radius: 10px;
+      transition: 0.3s ease background-color;
+      &:hover {
+        background-color: var(--deep-dark);
+      }
+    }
+    a {
+      font-family: 'RobotoMono Regular';
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      display: inline-block;
+      color: var(--gray-1);
+      outline: none;
+    }
+    .active {
+      color: var(--white);
+    }
   }
 `;
 

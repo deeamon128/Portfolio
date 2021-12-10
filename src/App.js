@@ -22,7 +22,7 @@ export default function App() {
             <Contact />
           </Route>
           <Route path="/">
-            <Home />
+            <Home exact />
           </Route>
         </Switch>
       </Router>
