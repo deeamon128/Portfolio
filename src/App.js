@@ -5,6 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import HeroSection from './components/HeroSection';
 
 export default function App() {
   return (

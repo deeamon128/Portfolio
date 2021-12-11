@@ -1,5 +1,10 @@
 import React from 'react';
+import HeroSection from '../components/HeroSection';
 
-const Home = () => <div>Home</div>;
+const Home = () => (
+  <div>
+    <HeroSection />
+  </div>
+);
 
 export default Home;
