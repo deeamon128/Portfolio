@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { MdMenu, MdClose } from 'react-icons/md';
 
 const NavMenuStyles = styled.div`
   position: fixed;
@@ -35,22 +36,71 @@ const NavMenuStyles = styled.div`
       color: var(--white);
     }
   }
+  .burger-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    cursor: pointer;
+    display: none;
+    outline: none;
+  }
+  .close-nav-icon {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .burger-menu-icon {
+      display: block;
+    }
+    .navItems {
+      position: absolute;
+      transition: 0.3s ease transform;
+      width: 90%;
+      max-width: 300px;
+      right: 1rem;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: var(--deep-dark);
+      .close-nav-icon {
+        display: block;
+        width: 3rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 `;
 
 const NavMenu = () => (
   <NavMenuStyles>
-    <ul>
+    <div className="burger-menu-icon">
+      <MdMenu />
+    </div>
+    <ul className="navItems">
+      <div className="close-nav-icon">
+        <MdClose />
+      </div>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">HOME</NavLink>
       </li>
       <li>
-        <NavLink to="/aboutme">About Me</NavLink>
+        <NavLink to="/aboutme">ABOUT ME</NavLink>
       </li>
       <li>
-        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/projects">PROJECTS</NavLink>
       </li>
       <li>
-        <NavLink to="/contactme">Contact Me</NavLink>
+        <NavLink to="/contactme">CONTACT ME</NavLink>
       </li>
     </ul>
   </NavMenuStyles>
