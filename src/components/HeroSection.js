@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import Text from './Text';
 import avatar from '../assets/img/avatar.jpg';
 import Button from './Button';
+import SocialMediaArrow from '../assets/img/social-media-arrow.svg';
+import ScrollDownArrow from '../assets/img/scroll-down-arrow.svg';
+import Text from './Text';
 
-const HeroStyle = styled.div`
+const HeroStyles = styled.div`
   .hero {
     height: 100vh;
     min-height: 1000px;
@@ -15,20 +17,21 @@ const HeroStyle = styled.div`
     justify-content: center;
     position: relative;
   }
-  .hero__heading {
+  .hero_heading {
+    margin-top: 3rem;
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: -3rem;
     position: relative;
     span {
       display: inline-block;
       width: 100%;
-      padding-left: 10px;
     }
-  }
-  .hero_name {
-    font-family: 'Montserrat SemiBold';
-    font-size: 3rem;
-    color: var(--white);
+    .hero_name {
+      font-family: 'Montserrat SemiBold';
+      font-size: 6rem;
+      color: var(--white);
+      margin-bottom: 2.5rem;
+    }
   }
   .hero_img {
     max-width: 900px;
@@ -37,32 +40,114 @@ const HeroStyle = styled.div`
     margin: 0 auto;
     border: 2px solid var(--gray-1);
   }
-  .hero__info {
+  .hero_info {
     margin-top: -18rem;
+  }
+  .hero_social,
+  .hero_scrollDown {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    bottom: 20px;
+    width: 50px;
+  }
+  .hero_social {
+    left: 50px;
+  }
+  .hero_scrollDown {
+    right: 50px;
+  }
+  .hero_social_indicator,
+  .hero_scrollDown {
+    width: 50px;
+    p {
+      font-size: 1.6rem;
+      transform: translateY(-70px) rotate(90deg);
+      letter-spacing: 0.7rem;
+      text-transform: uppercase;
+    }
+    img {
+      max-height: 45px;
+      width: 16px;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  }
+  .hero_scrollDown {
+    img {
+      max-height: 70px;
+    }
+  }
+  .hero_social_text {
+    ul {
+      li {
+        margin-bottom: 1rem;
+        a {
+          display: inline-block;
+          font-size: 1.6rem;
+          transform: rotate(-90deg);
+          letter-spacing: 5px;
+          margin-bottom: 2rem;
+        }
+      }
+    }
   }
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
     }
-    .hero__heading {
+    .hero_heading {
       font-size: 1.4rem;
       margin-bottom: -3rem;
-      .hero__name {
+      .hero_name {
         font-size: 4.5rem;
       }
     }
-    .hero__img {
+    .hero_img {
       height: 300px;
     }
-    .hero__info {
+    .hero_info {
       margin-top: 3rem;
+    }
+    .hero_social {
+      left: 0px;
+      bottom: -15%;
+      width: 20px;
+      .hero_social_indicator {
+        width: 20px;
+        p {
+          font-size: 1.2rem;
+        }
+        img {
+          max-height: 22px;
+        }
+      }
+      .hero_social_text {
+        ul {
+          li {
+            a {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .hero_scrollDown {
+      right: 0;
+      width: 20px;
+      gap: 1rem;
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
 `;
 
 export default function HeroSection() {
   return (
-    <HeroStyle>
+    <HeroStyles>
       <div className="hero">
         <div className="container">
           <h1 className="hero_heading">
@@ -70,25 +155,58 @@ export default function HeroSection() {
             <span className="hero_name">Andreea Bobariu</span>
           </h1>
           <div className="hero_img">
-            <img src={avatar} alt="avatar" />
+            <img src={avatar} alt="" />
           </div>
           <div className="hero_info">
             <Text>
-              {' '}
-              Experienced Consular Officer with a demonstrated history of
-              working in the civic and social organization industry. Dependable
-              team player with strong verbal, written, and interpersonal skills.
-              Trained in record management and confidentiality. Working in
-              strenuous and various environments has enabled me to adapt quickly
-              in any given conditions and has provided me with good
-              organizational, interpersonal, and numerical skills. Acquiring a
-              new set of skills as a future employee will not only benefit the
-              company but will help expand and develop my personal portfolio.{' '}
+              I am working as a freelance web designer and developer for 1 year.
+              I love to develop new aplication and websites.
             </Text>
-            <Button btnLink="/projects" btnText="see my works" />
+            <Button btnText="see my works" btnLink="/projects" />
+          </div>
+          <div className="hero_social">
+            <div className="hero_social_indicator">
+              <p>Follow</p>
+              <img src={SocialMediaArrow} alt="icon" />
+            </div>
+            <div className="hero_social_text">
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/deeamon128"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GH
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/abobariu/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/deeamb8/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    IG
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="hero_scrollDown">
+            <p>Scroll</p>
+            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>
         </div>
       </div>
-    </HeroStyle>
+    </HeroStyles>
   );
 }

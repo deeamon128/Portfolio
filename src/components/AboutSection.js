@@ -13,9 +13,12 @@ const AboutSectionStyles = styled.div`
     justify-content: flex-start;
     text-align: left;
   }
-  .aboutSection__left,
-  .aboutSection__right {
+  .aboutSection_left,
+  .aboutSection_right {
     flex: 1;
+  }
+  .aboutSection_right {
+    border: 2px solid var(--gray-1);
   }
   .section-title {
     text-align: left;
@@ -24,7 +27,7 @@ const AboutSectionStyles = styled.div`
     margin-top: 2rem;
     margin-left: 0;
   }
-  .aboutSection__buttons {
+  .aboutSection_buttons {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -32,10 +35,10 @@ const AboutSectionStyles = styled.div`
     margin-top: 2rem;
   }
   @media only screen and (max-width: 950px) {
-    .aboutSection__left {
+    .aboutSection_left {
       flex: 4;
     }
-    .aboutSection__right {
+    .aboutSection_right {
       flex: 3;
     }
   }
@@ -44,11 +47,11 @@ const AboutSectionStyles = styled.div`
       flex-direction: column;
       text-align: center;
     }
-    .aboutSection__left,
-    .aboutSection__right {
+    .aboutSection_left,
+    .aboutSection_right {
       width: 100%;
     }
-    .aboutSection__right {
+    .aboutSection_right {
       margin-top: 3rem;
     }
     .section-title {
@@ -58,7 +61,7 @@ const AboutSectionStyles = styled.div`
       margin: 0 auto;
       margin-top: 2rem;
     }
-    .aboutSection__buttons {
+    .aboutSection_buttons {
       flex-direction: column;
       gap: 0rem;
       .button-wrapper,
@@ -74,7 +77,7 @@ export default function AboutSection() {
   return (
     <AboutSectionStyles>
       <div className="container">
-        <div className="aboutSection__left">
+        <div className="aboutSection_left">
           <SectionTitle
             subheading="Let me introduce myself"
             heading="About Me"
@@ -84,12 +87,12 @@ export default function AboutSection() {
             create professional websites. I love design and always try to show
             unique views to the audience through my design.
           </Text>
-          <div className="aboutSection__buttons">
+          <div className="aboutSection_buttons">
             <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>
-        <div className="aboutSection__right">
+        <div className="aboutSection_right">
           <img className="aboutImg" src={AboutImg} alt="Img" />
         </div>
       </div>
