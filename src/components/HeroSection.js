@@ -41,7 +41,7 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero_info {
-    margin-top: -18rem;
+    margin-top: 1rem;
   }
   .hero_social,
   .hero_scrollDown {

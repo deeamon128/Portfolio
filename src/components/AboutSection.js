@@ -88,8 +88,8 @@ export default function AboutSection() {
             unique views to the audience through my design.
           </Text>
           <div className="aboutSection_buttons">
-            <Button btnText="Works" btnLink="/projects" />
-            <Button btnText="Read More" btnLink="/about" outline />
+            <Button btnText="works" btnLink="/projects" />
+            <Button btnText="read more" btnLink="/about" outline />
           </div>
         </div>
         <div className="aboutSection_right">
