@@ -1,16 +1,16 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../img/projectImg.png';
-import UTrackerImg from '../img/utracker.jpg';
 import GreenCtgImg from '../img/greenctg.jpg';
 import CoinTrackerImg from '../img/cointracker.jpg';
 import CavinImg from '../img/cavinimg.jpg';
+import indexLGBT from '../img/indexLGBT.png';
 
 const projects = [
   {
     id: uuidv4(),
     name: 'Index LGBT Movies and Series',
     desc: 'A website that track all the LGBT movies and series',
-    img: UTrackerImg,
+    img: indexLGBT,
   },
   {
     id: uuidv4(),

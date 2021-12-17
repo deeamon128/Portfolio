@@ -123,7 +123,14 @@ export default function About() {
 
               <AboutInfoItem
                 title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                items={[
+                  'HTML',
+                  'CSS',
+                  'JavaScript',
+                  'REACT',
+                  'MaterialUI',
+                  'styled-components',
+                ]}
               />
               <AboutInfoItem title="Design" items={['Photoshop', 'Figma']} />
             </div>
@@ -131,11 +138,11 @@ export default function About() {
               <h1 className="about_info_heading">Experiences</h1>
 
               <AboutInfoItem
-                title="february 2021 - july 2021"
+                title="2021"
                 items={['junior developer at BitBee']}
               />
               <AboutInfoItem
-                title="january 2021 - march 2021"
+                title="2022"
                 items={['scholarship from Codefirstgirls in Web Dev']}
               />
             </div>
