@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../img/projectImg.png';
-import GreenCtgImg from '../img/greenctg.jpg';
 import CoinTrackerImg from '../img/cointracker.jpg';
 import CavinImg from '../img/cavinimg.jpg';
 import indexLGBT from '../img/indexLGBT.png';
+
 
 const projects = [
   {
@@ -14,10 +14,10 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'e-Commerce Website',
     desc:
       'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+    img: indexLGBT,
   },
   {
     id: uuidv4(),
