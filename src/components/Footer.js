@@ -101,7 +101,7 @@ export default function Footer() {
                 path: 'https://github.com/deeamon128',
               },
               {
-                title: 'Linkdin',
+                title: 'Linkedin',
                 path: 'https://www.linkedin.com/in/abobariu/',
               },
               {

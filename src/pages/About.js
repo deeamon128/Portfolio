@@ -90,7 +90,7 @@ export default function About() {
                   with my unique point of view. I also love to create things
                   that can be usefull to others.
                   <br /> <br />
-                  I started coding at the beggining of 2021 in the middle of
+                  I started coding at the begining of 2021 in the middle of
                   pandemic thinking that is the time for a new change. Coding is
                   also an art for me. I love it and now I have the opportunity
                   to design along with the coding. I find it really interesting

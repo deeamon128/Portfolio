@@ -1,9 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../img/projectImg.png';
 import CoinTrackerImg from '../img/cointracker.jpg';
-import CavinImg from '../img/cavinimg.jpg';
 import indexLGBT from '../img/indexLGBT.png';
-import commerce from '../img/commerce.png';
+import commerce from '../img/ecommerce.png';
 
 const projects = [
   {
@@ -15,8 +13,7 @@ const projects = [
   {
     id: uuidv4(),
     name: 'e-Commerce Website',
-    desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
+    desc: 'A fully functional eCommerce application using commerce.js.',
     img: commerce,
   },
   {
