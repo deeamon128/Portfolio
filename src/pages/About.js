@@ -82,25 +82,26 @@ export default function About() {
               <p className="about_subheading">
                 Hi, I am <span>Andreea Bobariu</span>
               </p>
-              <h2 className="about_heading">junior Web developer</h2>
+              <h2 className="about_heading">junior full stack developer</h2>
               <div className="about_info">
                 <Text>
-                  I am from London, Uk. A place of beauty and nature. Since my
-                  childhood, i love art and design. I always try to design stuff
-                  with my unique point of view. I also love to create things
-                  that can be usefull to others.
+                  Experienced professional with a demonstrated history of
+                  working in tech and consular affairs industry. Highly skilled
+                  in analytical skills, problem solving, public and
+                  international relations. Trained in record management and
+                  confidentiality with broad knowledge in tech and
+                  administration.
                   <br /> <br />
                   I started coding at the begining of 2021 in the middle of
-                  pandemic thinking that is the time for a new change. Coding is
-                  also an art for me. I love it and now I have the opportunity
-                  to design along with the coding. I find it really interesting
-                  and I enjoyed the process a lot.
+                  pandemic thinking that is the time for a new change.I believe
+                  that my technical skills and knowledge of HTML, CSS, React and
+                  more other will render me a valuable addition to your web
+                  development team.
                   <br />
                   <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
+                  I’m passionate about developing interactive websites and web
+                  features to drive up online traffic and sales, bringing the
+                  company to greater heights.
                 </Text>
               </div>
               <Button btnText="Download CV" btnLink="#" />
@@ -112,10 +113,21 @@ export default function About() {
           <div className="about_info_items">
             <div className="about_info_item">
               <h1 className="about_info_heading">Education</h1>
-
               <AboutInfoItem
-                title="University"
-                items={['University of West, Timisoara, Romania']}
+                title="Code First for Girls Academy |    January - March 2022"
+                items={['Web Development - HTML, CSS and JavaScript']}
+              />
+              <AboutInfoItem
+                title="Codetap Academy Bootcamp | February - June 2021 "
+                items={['Front End Development - HTML, CSS, JavaScript, React']}
+              />
+              <AboutInfoItem
+                title="Raspberry PI Foundation and Centre for Computing Education | January 2021 "
+                items={['Introduction to Databases and SQL']}
+              />
+              <AboutInfoItem
+                title="University of West | 2010 - 2013"
+                items={['BA (Hons) History and Archaeology ']}
               />
             </div>
             <div className="about_info_item">
@@ -132,18 +144,47 @@ export default function About() {
                   'styled-components',
                 ]}
               />
-              <AboutInfoItem title="Design" items={['Photoshop', 'Figma']} />
+              <AboutInfoItem
+                title="Backend"
+                items={[
+                  'NodeJs',
+                  'Express',
+                  'MongoDB',
+                  'Git',
+                  'Rest API',
+                  'JSON',
+                ]}
+              />
+              <AboutInfoItem
+                title="Other"
+                items={[
+                  'Figma',
+                  'AdobeXD',
+                  'Jira',
+                  'Trello',
+                  'Github',
+                  'Agile',
+                ]}
+              />
             </div>
             <div className="about_info_item">
               <h1 className="about_info_heading">Experiences</h1>
 
               <AboutInfoItem
-                title="2021"
-                items={['junior developer at BitBee']}
+                title="Welfound Lts | January - current"
+                items={['junior front end developer']}
               />
               <AboutInfoItem
-                title="2022"
-                items={['scholarship from Codefirstgirls in Web Dev']}
+                title="Ministry of Foreign Affairs, Embassy and Consulate, London | 2021 - current"
+                items={['junior full stack developer']}
+              />
+              <AboutInfoItem
+                title="UCL Multimedia Anthropology Lab |    august - december 2021"
+                items={['web designer and production volunteer']}
+              />
+              <AboutInfoItem
+                title="BitBee ltd | march - july 2021"
+                items={['junior front end developer']}
               />
             </div>
           </div>

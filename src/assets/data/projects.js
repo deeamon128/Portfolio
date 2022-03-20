@@ -18,9 +18,14 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
-    desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
+    name: 'Clock',
+    desc: 'A project that use NodeJs, Express and MaterialUI.',
+    img: CoinTrackerImg,
+  },
+  {
+    id: uuidv4(),
+    name: 'Markdown Blog',
+    desc: 'A project that use NodeJs, Express and MongoDB.',
     img: CoinTrackerImg,
   },
 ];
